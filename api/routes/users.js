@@ -1,5 +1,10 @@
 import express from 'express';
-import { getUsers, addUser, updateUser, deleteUser } from '../controllers/user.js';
+import {
+    getUsers,
+    addUser,
+    updateUser,
+    deleteUser
+} from '../controllers/user.js';
 
 const router = express.Router(); //indica que é uma rota
 

@@ -15,9 +15,9 @@ export const getUsers = (_, res) => {  //requisição e o response
 //add usuário
 
 export const addUser = (req, res) => { //receber por parametro request e response
-    const q = //query
+    const q =
         " INSERT INTO usuarios (`nome`, `email`,`fone`,`data_nascimento`) VALUES(?)"; //valores vão substituir (?) e vai seguir uma ordem de inserção
-    const value = [
+    const values = [
         req.body.nome,
         req.body.email,
         req.body.fone,
@@ -51,7 +51,7 @@ export const updateUser = (req, res) => {
 };
 
 export const deleteUser = (req, res) => { //receber por parametro request e response
-    const q = //query
+    const q =
         " DELETE FROM usuarios WHERE `id` = ? "; //valores vão substituir (?) e vai seguir uma ordem de inserção
 
 
